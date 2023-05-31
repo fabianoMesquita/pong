@@ -122,3 +122,8 @@ function marcaPonto(){
     pontosOponente += 1;
   }
 }
+function bolinhaNaoFicaPresa(){
+  if (xBolinha - raio < 0){
+    xBolinha = 23
+  }
+}

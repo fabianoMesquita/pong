@@ -34,6 +34,7 @@ function draw() {
   background(0);
   mostraBolinha();
   movimentaBolinha();
+  bolinhaNaoFicaPresa();
   verificaColisaoBorda();
   mostraRaquete(xRaquete,yRaquete);
   movimentaRaquete();
@@ -119,5 +120,10 @@ function marcaPonto(){
   }
   if (xBolinha < 5){
     pontosOponente += 1;
+  }
+}
+function bolinhaNaoFicaPresa(){
+  if (xBolinha - raio < 0){
+    xBolinha = 23
   }
 }
